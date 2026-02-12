@@ -14,7 +14,7 @@ read opcion
 
 case $opcion in
 1)
-./ arbol.sh
+./arbol.sh
 read -p "presiona enter para continuar..."
 ;;
 2)

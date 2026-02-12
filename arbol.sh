@@ -1,9 +1,11 @@
 #!/bin/bash
 
-echo"ingresa el nombre del directorio principal:"
-read dir
+echo "ingresa el nombre del directorio principal:"
+read nombre
 
-mkdir -p $dir/{docs,images,backup}
+mkdir -p "$nombre"/docs
+mkdir -p "$nombre"/images
+mkdir -p "$nombre"/backup
 
-echo"Arbol de directorios creado:"
-tree $dir 2>/dev/null || ls -R $dir
+echo "Arbol de directorios creado:"
+
